@@ -45,6 +45,11 @@ PODS:
   - just_audio (0.0.1):
     - Flutter
     - FlutterMacOS
+  - onnxruntime-c (1.24.3)
+  - onnxruntime-objc (1.24.3):
+    - onnxruntime-objc/Core (= 1.24.3)
+  - onnxruntime-objc/Core (1.24.3):
+    - onnxruntime-c (= 1.24.3)
   - PromisesObjC (2.4.0)
   - record_ios (1.2.0):
     - Flutter
@@ -60,6 +65,7 @@ DEPENDENCIES:
   - Flutter (from `Flutter`)
   - google_sign_in_ios (from `.symlinks/plugins/google_sign_in_ios/darwin`)
   - just_audio (from `.symlinks/plugins/just_audio/darwin`)
+  - onnxruntime-objc (~> 1.19)
   - record_ios (from `.symlinks/plugins/record_ios/ios`)
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
@@ -72,6 +78,8 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - onnxruntime-c
+    - onnxruntime-objc
     - PromisesObjC
 
 EXTERNAL SOURCES:
@@ -104,11 +112,13 @@ SPEC CHECKSUMS:
   GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
   GTMSessionFetcher: 5aea5ba6bd522a239e236100971f10cb71b96ab6
   just_audio: 4e391f57b79cad2b0674030a00453ca5ce817eed
+  onnxruntime-c: 4a1a1a81da2087869dc9b6357f182952db2df29c
+  onnxruntime-objc: f9310465f0a284682811d071b7eb8e93f10517b8
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   record_ios: 412daca2350b228e698fffcd08f1f94ceb1e3844
   shared_preferences_foundation: 7036424c3d8ec98dfe75ff1667cb0cd531ec82bb
   url_launcher_ios: 7a95fa5b60cc718a708b8f2966718e93db0cef1b
 
-PODFILE CHECKSUM: 3c63482e143d1b91d2d2560aee9fb04ecc74ac7e
+PODFILE CHECKSUM: 6f626173cd070b65abb1662730cb33d751f72182
 
 COCOAPODS: 1.16.2

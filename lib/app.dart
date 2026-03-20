@@ -12,6 +12,8 @@ class App extends ConsumerWidget {
 
     return MaterialApp.router(
       title: '너목들',
+      debugShowCheckedModeBanner: false,
+
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

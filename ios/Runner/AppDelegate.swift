@@ -8,6 +8,7 @@ import UIKit
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
+    PocketTTSPlugin.register(with: registrar(forPlugin: "PocketTTSPlugin")!)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 }
