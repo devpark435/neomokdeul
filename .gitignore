@@ -1,45 +1,81 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# ===========================
+# 너목들 (neomokdeul) .gitignore
+# Flutter 기본 + 프로젝트 전용
+# ===========================
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# --- Flutter 기본 (flutter create 시 생성되는 것과 동일) ---
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
+*.dart_tool/
+*.packages
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
-/coverage/
+build/
+flutter_export_environment.sh
 
-# Symbolication related
-app.*.symbols
+# --- iOS ---
 
-# Obfuscation related
-app.*.map.json
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+ios/Runner.xcworkspace/xcshareddata/
+ios/Runner.xcworkspace/xcuserdata/
+ios/Runner.xcodeproj/xcuserdata/
+ios/Runner.xcodeproj/project.xcworkspace/xcuserdata/
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# --- Android ---
+
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/key.properties
+*.apk
+*.aab
+
+# --- 환경 변수 (절대 레포에 올리면 안 됨) ---
+
+.env
+.env.*
+
+# --- ONNX 모델 파일 (너무 큼, 레포에 올리면 안 됨) ---
+
+*.onnx
+*.safetensors
+*.bin
+tokenizer.model
+
+# --- 사용자 생성 미디어 (테스트 중 생긴 파일들) ---
+
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.m4a
+
+# --- IDE ---
+
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# --- 시스템 ---
+
+.DS_Store
+Thumbs.db
+
+# --- Claude Code (개인 작업 환경) ---
+
+CLAUDE.md
+.claudeignore
+
+# --- 기타 ---
+
+*.log
+tmp/
+.cache/
