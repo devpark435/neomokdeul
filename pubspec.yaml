@@ -30,8 +30,11 @@ dependencies:
   flutter_dotenv: ^5.2.1
 
   # 오디오 녹음/재생
-  record: ^5.2.1
+  record: ^6.2.0
   just_audio: ^0.9.43
+
+  # 소셜 로그인
+  google_sign_in: ^6.2.2
 
   # 유틸
   path_provider: ^2.1.5

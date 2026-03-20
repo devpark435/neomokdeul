@@ -36,10 +36,11 @@ android/key.properties
 *.apk
 *.aab
 
-# --- 환경 변수 (절대 레포에 올리면 안 됨) ---
+# --- 환경 변수 / 시크릿 (절대 레포에 올리면 안 됨) ---
 
 .env
 .env.*
+ios/Flutter/Secrets.xcconfig
 
 # --- ONNX 모델 파일 (너무 큼, 레포에 올리면 안 됨) ---
 
